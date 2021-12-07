@@ -1,0 +1,11 @@
+.Chapter {
+  max-width: 40rem;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.Chapter h1 {
+  text-align: center;
+}
+
