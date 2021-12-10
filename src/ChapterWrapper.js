@@ -17,7 +17,7 @@ function ChapterWrapper() {
     fetch(`/chapters/chapter_${id}.json`).then(response=>response.json()).then(json => {
       setChapter(json)
     })
-  }, [])
+  }, [id])
 
   return (
     <div className="ChapterWrapper">

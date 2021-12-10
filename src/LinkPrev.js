@@ -1,8 +1,10 @@
 import './LinkPrev.css'
 
+import { Link } from "react-router-dom"
+
 function LinkPrev(props) {
   let current = parseInt(props.current)
-  
+
   if (current <= 1) {
     return (
       <div className="LinkPrev">
@@ -11,7 +13,7 @@ function LinkPrev(props) {
   } else {
     return (
       <div className="LinkPrev">
-        <a href={current-1}>Chapter {current-1}</a>
+        <Link to={'/'+(current-1)}>Chapter {current-1}</Link>
       </div>
     )
   }
